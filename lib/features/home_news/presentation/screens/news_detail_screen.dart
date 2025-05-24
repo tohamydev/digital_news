@@ -1,3 +1,4 @@
+import 'package:digital_news/core/components/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -9,6 +10,8 @@ class NewsDetailScreen extends StatelessWidget {
   final Article article;
 
   const NewsDetailScreen({Key? key, required this.article}) : super(key: key);
+
+ 
 
   @override
   Widget build(BuildContext context) {
@@ -87,6 +90,17 @@ class NewsDetailScreen extends StatelessWidget {
                           height: 1.6,
                         ),
                       ),
+                      SizedBox(height: 24.h),
+                      if (article.url != null && article.url!.isNotEmpty)
+                        SizedBox(
+                          width: double.infinity,
+                          child: CustomButton(
+                            onPressed: (){
+                              FunctionHelper.launchArticleUrl(article.url);
+                            }, text: 'Read Full Article',
+
+                          ),
+                        ),
                     ],
                   ),
                 ),

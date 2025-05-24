@@ -1,3 +1,4 @@
+import 'package:url_launcher/url_launcher.dart';
 
 class FunctionHelper {
   static String formatDateTime(String dateTimeString) {
@@ -24,6 +25,17 @@ class FunctionHelper {
       return '${dateTime.day}/${dateTime.month}/${dateTime.year} • ${dateTime.hour}:${dateTime.minute.toString().padLeft(2, '0')}';
     } catch (e) {
       return dateTimeString;
+    }
+  }
+
+  static Future<bool> launchArticleUrl(String? url) async {
+    if (url == null || url.isEmpty) return false;
+
+    try {
+      final Uri uri = Uri.parse(url);
+      return await launchUrl(uri, mode: LaunchMode.externalApplication);
+    } catch (e) {
+      return false;
     }
   }
 }
