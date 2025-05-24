@@ -6,6 +6,12 @@
 
 Click the button above to watch the app preview on YouTube.
 
+## 📥 Download APK
+
+[![Download APK](https://img.shields.io/badge/Download-APK-green)](https://github.com/tohamydev/digital_news/releases)
+
+Click the button above to download the latest APK from our releases page.
+
 ## Features
 - Modern and clean UI
 - Category-based news filtering
