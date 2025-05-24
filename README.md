@@ -15,7 +15,7 @@ flutter doctor
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/tohamydev/digital_news.git
+git clone <your-repo-url>
 cd digital_news
 ```
 
