@@ -8,7 +8,6 @@ Click the button above to watch the app preview on YouTube.
 
 ## Features
 - Modern and clean UI
-- Real-time news updates
 - Category-based news filtering
 - Search functionality
 - Responsive design
