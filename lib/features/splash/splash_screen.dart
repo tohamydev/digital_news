@@ -41,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen>
       body: FadeTransition(
         opacity: _animation,
         child: Center(
-          child:AppLogo(),
+          child: AppLogo(),
         ),
       ),
     );

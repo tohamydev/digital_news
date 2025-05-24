@@ -22,8 +22,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bool isTablet = MediaQuery.of(context).size.width >= 600;
+
     return ScreenUtilInit(
-      designSize: const Size(375, 812),
+      designSize: isTablet ? const Size(650, 1000) :const Size(375, 812),
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
