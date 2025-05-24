@@ -31,32 +31,38 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.8
-  flutter_screenutil: ^5.9.3
-  flutter_bloc: ^9.1.1
-  equatable: ^2.0.5
-  get_it: ^8.0.3
-  flutter_svg: ^2.0.17
-  dio: ^5.8.0+1
-  retrofit: ^4.4.2
-  retrofit_generator: ^9.1.2
-  pretty_dio_logger: ^1.4.0
-  url_launcher: ^6.2.5
+  # UI and Design
+  cupertino_icons: ^1.0.8  # iOS style icons
+  flutter_screenutil: ^5.9.3  # Responsive UI scaling
+  flutter_svg: ^2.0.17  # SVG image support
+  shimmer: ^3.0.0  # Loading shimmer effects
+  cached_network_image: ^3.4.1  # Image caching
+  page_transition: ^2.2.1  # Custom page transitions
 
-  json_annotation: ^4.9.0
-  freezed: ^3.0.6
-  freezed_annotation: ^3.0.0
-  json_serializable: ^6.9.3
-  shared_preferences: ^2.5.2
-  connectivity_plus: ^6.1.4
-  page_transition: ^2.2.1
-  dartz: ^0.10.1
-  shimmer: ^3.0.0
-  cached_network_image: ^3.4.1
-  flutter_dotenv: ^5.2.1
-  
+  # State Management and Dependency Injection
+  flutter_bloc: ^9.1.1  # BLoC pattern implementation
+  equatable: ^2.0.5  # Value equality comparison
+  get_it: ^8.0.3  # Service locator and dependency injection
+
+  # Network and API
+  dio: ^5.8.0+1  # HTTP client
+  retrofit: ^4.4.2  # Type-safe API client
+  pretty_dio_logger: ^1.4.0  # Network request logging
+  url_launcher: ^6.2.5  # URL handling
+  connectivity_plus: ^6.1.4  # Network connectivity status
+
+  # Data Management and Storage
+  shared_preferences: ^2.5.2  # Local storage
+  dartz: ^0.10.1  # Functional programming features
+
+  # Code Generation and Serialization
+  json_annotation: ^4.9.0  # JSON serialization annotations
+  freezed: ^3.0.6  # Code generation for data classes
+  freezed_annotation: ^3.0.0  # Freezed annotations
+  json_serializable: ^6.9.3  # JSON serialization code generation
+
+  # Environment and Configuration
+  flutter_dotenv: ^5.2.1  # Environment variables management
 
 dev_dependencies:
   flutter_test:
