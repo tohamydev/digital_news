@@ -4,6 +4,72 @@
 
 A cross-platform Flutter news app.
 
+## ✨ App Features
+
+- **Home News**: Browse the latest breaking news and top headlines from various categories.
+- **Stories News**: View news stories in a modern, story-like format for quick and engaging updates.
+
+## 🗂️ Project Structure
+
+```
+lib/
+├── core/                # Core utilities, DI, network, constants, shared components
+│   ├── components/      # Reusable UI widgets (buttons, fields, etc.)
+│   ├── constants/       # App-wide constants (colors, assets, etc.)
+│   ├── di/              # Dependency injection setup
+│   ├── network/         # Network layer (API, Dio, etc.)
+│   ├── router/          # App routing and navigation
+│   └── layout/          # Main app layout and navigation shell
+├── features/            # Feature modules (e.g., login, home news, stories)
+│   ├── login/           # Login screen and logic
+│   ├── splash/          # Splash screen and animation
+│   ├── profile/         # Profile screen and user info
+│   └── home_news/       # News, stories, and related screens
+├── main.dart            # App entry point
+```
+
+### 📦 Features Directory Detailed Explanation
+
+#### **splash/**
+- `splash_screen.dart`: Splash screen with animation, shown at app startup.
+
+#### **login/**
+- `login_screen.dart`: Login UI and logic (email, password, login button, etc).
+
+#### **profile/**
+- `profile_screen.dart`: User profile screen, shows user info, social links, and settings.
+
+#### **home_news/**
+Implements Clean Architecture:
+
+- **data/**
+  - **datasources/news_remote_data_source.dart**: Handles fetching news from remote APIs.
+  - **repositories/news_repository_impl.dart**: Implements the repository pattern, connects data sources to domain logic.
+  - **models/**: Data models for articles and sources, plus generated files for JSON serialization.
+    - `article_model.dart`, `source_model.dart`: Data structures for news articles and sources.
+    - `*.g.dart`: Generated code for JSON (de)serialization.
+
+- **domain/**
+  - **entities/article.dart**: Core business entity for a news article.
+  - **repositories/news_repository.dart**: Abstract repository interface for news operations.
+  - **usecases/get_top_headlines.dart**: Use case for fetching top headlines.
+
+- **presentation/**
+  - **screens/**: UI screens for news (main, stories, details).
+    - `home_news_screen.dart`: Main news feed.
+    - `stories_news_screen.dart`: Stories-style news view.
+    - `news_detail_screen.dart`: Detailed news article view.
+  - **logic/**: State management (Cubit/Bloc) for news.
+    - `home_news_cubit.dart`, `home_news_state.dart`: Cubit and state classes for managing news state.
+  - **components/**: UI components for news and stories.
+    - **home_news/**: Cards, search bar, categories, etc.
+    - **stories_news/**: Components for stories view.
+    - **shared/**: Shared UI widgets between news and stories.
+
+---
+
+Each feature is organized for scalability and maintainability, following best practices for modular Flutter apps.
+
 ## 🚀 Getting Started
 
 ### 0. Check Your Flutter Setup
@@ -15,7 +81,7 @@ flutter doctor
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/tohamydev/digital_news.git
 cd digital_news
 ```
 
