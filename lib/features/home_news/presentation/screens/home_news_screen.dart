@@ -96,6 +96,7 @@ class _HomeNewsScreenState extends State<HomeNewsScreen> {
     return SliverAppBar(
       floating: true,
       snap: true,
+      centerTitle: true,
       automaticallyImplyLeading: false,
       backgroundColor: AppColors.background,
       elevation: 0,
