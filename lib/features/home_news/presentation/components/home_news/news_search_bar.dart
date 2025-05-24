@@ -27,6 +27,7 @@ class NewsSearchBar extends StatelessWidget {
           color: AppColors.text,
           fontSize: 16.sp,
         ),
+        onTapOutside: (event) => FocusScope.of(context).unfocus(),
         decoration: InputDecoration(
           hintText: 'Search news...',
           hintStyle: TextStyle(
@@ -38,6 +39,7 @@ class NewsSearchBar extends StatelessWidget {
             color: AppColors.text.withOpacity(0.5),
           ),
           border: InputBorder.none,
+          focusedBorder:InputBorder.none ,
           contentPadding: EdgeInsets.symmetric(
             horizontal: 16.w,
             vertical: 12.h,
