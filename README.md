@@ -1,3 +1,29 @@
+# Digital News App
+
+## App Preview
+
+[![Watch Preview](https://img.shields.io/badge/YouTube-Watch%20Preview-red)](https://youtube.com/shorts/YCL7wvSCsYU)
+
+Click the button above to watch the app preview on YouTube.
+
+## Features
+- Modern and clean UI
+- Real-time news updates
+- Category-based news filtering
+- Search functionality
+- Responsive design
+
+## Getting Started
+1. Clone the repository
+2. Run `flutter pub get`
+3. Run `flutter run`
+
+## Technologies Used
+- Flutter
+- Dart
+- REST API
+- Cubit State Management
+
 # Digital News
 
 **App Version:** 1.0.0+1
