@@ -26,7 +26,7 @@ class _LayoutScreenState extends State<LayoutScreen>
 
   final List<Widget> _screens = [
     const HomeNewsScreen(),
-    const SortsNewsScreen(),
+    const StoriesNewsScreen(),
     const ProfileScreen(),
   ];
 

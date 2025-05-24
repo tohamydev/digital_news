@@ -1,3 +1,7 @@
+// api_service.dart
+// This file defines the API service for making remote HTTP requests.
+// It contains methods for interacting with the backend API endpoints.
+
 import 'package:digital_news/core/network/remote/api_constants.dart';
 import 'package:dio/dio.dart' hide Headers;
 import 'package:dio/dio.dart';

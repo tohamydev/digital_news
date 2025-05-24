@@ -6,14 +6,14 @@ import '../logic/home_news_cubit.dart';
 import '../logic/home_news_state.dart';
 import '../components/stories_news/stories_content.dart';
 
-class SortsNewsScreen extends StatefulWidget {
-  const SortsNewsScreen({Key? key}) : super(key: key);
+class StoriesNewsScreen extends StatefulWidget {
+  const StoriesNewsScreen({Key? key}) : super(key: key);
 
   @override
-  State<SortsNewsScreen> createState() => _SortsNewsScreenState();
+  State<StoriesNewsScreen> createState() => _StoriesNewsScreenState();
 }
 
-class _SortsNewsScreenState extends State<SortsNewsScreen> {
+class _StoriesNewsScreenState extends State<StoriesNewsScreen> {
   final PageController _pageController = PageController();
   final ValueNotifier<int> _currentIndexNotifier = ValueNotifier<int>(0);
 

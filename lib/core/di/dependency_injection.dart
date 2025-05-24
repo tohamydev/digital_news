@@ -1,3 +1,7 @@
+// dependency_injection.dart
+// This file sets up dependency injection for the app using get_it.
+// It registers all core services, network clients, and cubits/blocs for global access.
+
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 

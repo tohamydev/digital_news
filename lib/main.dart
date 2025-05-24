@@ -4,11 +4,9 @@ import 'package:digital_news/core/router/app_router.dart';
 import 'package:digital_news/core/router/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'config/theme.dart';
-import 'core/layout/layout_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
