@@ -2,7 +2,7 @@
 
 ## App Preview
 
-[![Watch Preview](https://img.shields.io/badge/YouTube-Watch%20Preview-red)](https://youtube.com/shorts/YCL7wvSCsYU)
+[![Watch Preview](https://img.shields.io/badge/YouTube-Watch%20Preview-red)]((https://www.youtube.com/shorts/kXqvBi_bCJ8))
 
 Click the button above to watch the app preview on YouTube.
 
