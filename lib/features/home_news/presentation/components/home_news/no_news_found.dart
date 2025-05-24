@@ -10,7 +10,6 @@ class NoNewsFound extends StatelessWidget {
     return AnimatedSwitcher(
       duration: Duration(milliseconds: 300),
       child: Center(
-        key: ValueKey('no_news'),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -21,7 +20,7 @@ class NoNewsFound extends StatelessWidget {
             ),
             SizedBox(height: 16.h),
             Text(
-              'No News Found',
+              'No articles available',
               style: TextStyle(
                 fontSize: 18.sp,
                 color: AppColors.secondaryText,
