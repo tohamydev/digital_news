@@ -23,7 +23,12 @@ class NewsList extends StatelessWidget {
           }
           return NewsItemsList(articles: state.articles);
         } else if (state is HomeNewsError) {
-          return ErrorState(message: state.message);
+          return ErrorState(
+            message: state.message,
+            onRetry: () {
+              context.read<HomeNewsCubit>().loadTopHeadlines();
+            },
+          );
         }
         return const SizedBox();
       },
